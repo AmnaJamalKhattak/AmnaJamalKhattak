@@ -1,5 +1,5 @@
 # About Me:
-Hi, I’m Amna — a Computer Science student passionate about Machine Learning, Web Development and Math. I enjoy building smart applications, exploring new technologies, and turning ideas into real projects.
+Hi, I’m Amna — a Computer Science student passionate about Machine Learning, Quantum Physics and Math. I enjoy building smart applications, exploring new technologies, and turning ideas into real projects.
 
 
 ## Socials:
