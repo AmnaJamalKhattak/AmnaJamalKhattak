@@ -34,6 +34,29 @@
     </script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Unify all Contact section text, icons, and links to a single color */
+        #contact .contact-info,
+        #contact .contact-info p,
+        #contact .contact-info a,
+        #contact .contact-info i {
+            color: inherit;
+        }
+        #contact .contact-info a {
+            text-decoration: none;
+        }
+        #contact .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Widen only the hero so the intro text spans more width and runs shorter.
+           Adjust 1140px up or down to taste; the rest of the site stays at 900px. */
+        @media (min-width: 769px) {
+            .hero .container {
+                max-width: 1140px;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -65,19 +88,23 @@
                         <a href="https://www.linkedin.com/in/amnajamalkhattak/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         <a href="https://github.com/AmnaJamalKhattak" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
                         <a href="mailto:amnajkhattak@gmail.com" title="Email"><i class="fas fa-envelope"></i> Email</a>
+                        <a href="Amna Jamal  - Resume - May, 2026.pdf" target="_blank" rel="noopener noreferrer" title="CV"><i class="fas fa-file-alt"></i> CV</a>
                     </div>
                 </div>
                 <div class="hero-right">
                     <div id="about-content" class="about-content">
                         <p>
-                            Hi, I am Amna Jamal, a computer science graduate from COMSATS University Islamabad and an early-career researcher in <strong>AI safety</strong> and <strong>mechanistic interpretability</strong>.
+                            Hi, I am Amna Jamal, a computer science graduate and an early-career researcher in <strong>AI safety</strong> with a particular focus on <strong>mechanistic interpretability</strong>.
                         </p>
+
                         <p>
-                            My research is about understanding what is actually happening inside modern AI systems: how they represent and process information internally, and how to use causal interventions to separate genuine mechanisms from surface-level correlations. I am drawn to this because as AI systems grow more capable and more widely deployed, being able to look inside them and verify what they are doing, rather than treating them as black boxes, feels like one of the most important problems to work on. Interpretability is where my technical interests and that concern meet.
+                            My research is mostly about understanding what is actually happening inside modern AI systems: how they represent and process information internally, what shapes their behaviour, and how causal methods can reveal the mechanisms underlying their decisions. I am drawn to this because as AI systems grow more capable and more widely deployed, being able to look inside them and verify what they are doing, rather than just treating them as black boxes, feels like one of the most important problems to work on. We can never make something safe that we do not understand.
                         </p>
+
                         <p>
-                            I am currently spending a research-focused gap year deepening this work and building toward PhD applications in mechanistic interpretability and technical AI safety. Alongside my own research, I help grow AI safety research capacity in Pakistan through ResearchCircle. Longer term, I want to do interpretability research that makes advanced AI systems more transparent and safer to deploy.
+                            I am currently working on multiple research projects, and building toward PhD applications in mechanistic interpretability and technical AI safety. Alongside my own research, I help grow AI safety research capacity in Pakistan through a community that I have built called ResearchCircle. Longer term, I want to do interpretability research that makes advanced AI systems more transparent and safer to deploy.
                         </p>
+
                         <p>
                             I am open to research collaborations and PhD opportunities in these areas.
                         </p>
@@ -106,9 +133,9 @@
                     <h2>Education</h2>
                     <div class="education-list">
                         <div class="education-item">
-                            <h3>Bachelor of Science in Computer Science</h3>
+                            <h3>BS Computer Science</h3>
                             <p class="institution">COMSATS University Islamabad, Pakistan</p>
-                            <p class="gpa">02/22 - 02/26 &nbsp;•&nbsp; CGPA: 3.44 / 4.00</p>
+                            <p class="gpa">02/22 - 02/26</p>
                         </div>
                     </div>
                 </section>
@@ -190,29 +217,29 @@
                         <h3>Program Support Volunteer - PRISM AI Safety Fellowship 2026</h3>
                         <p class="experience-description">
                             Support two technical AI safety research teams in both a technical and coordination capacity, contributing to research tasks and experiments and keeping the teams on track through progress tracking, blocker identification, and project coordination.<br><br>
-                            • <strong>AI Preference Drift During Training</strong> — Research Lead: Rubi Hudson (Principled Agents). Studies whether an AI model’s preferences over different tasks shift as it is trained on particular capabilities, and whether the model can anticipate changes in its own future preferences.<br>
-                            • <strong>LLMs and Conflicting Information</strong> — Research Lead: Ayodeji Olusegun Ibitoye (University of Greenwich, London). Studies how large language models revise decisions when new evidence conflicts with earlier information or recommendations, including update consistency, anchoring, and uncertainty calibration.
+                            • <strong>AI Preference Drift During Training</strong> — Studies whether an AI model’s preferences over different tasks shift as it is trained on particular capabilities, and whether the model can anticipate changes in its own future preferences.<br>
+                            • <strong>LLMs and Conflicting Information</strong> — Studies how large language models revise decisions when new evidence conflicts with earlier information or recommendations, including update consistency, anchoring, and uncertainty calibration.
                         </p>
                         <p class="experience-date">06/26 - Present</p>
                     </div>
                     <div class="experience-item">
-                        <h3>Founder and Campus Lead - ResearchCircle</h3>
+                        <h3>Founder - ResearchCircle</h3>
                         <p class="experience-description">
-                            Founded ResearchCircle, an interdisciplinary undergraduate research community (now 600+ students across computer science, mathematics, and physics) running recurring discussion circles and workshops.
+                            Founded ResearchCircle, an interdisciplinary undergraduate research community (now 900+ students across computer science, mathematics, and physics) running recurring discussion circles and workshops.
                         </p>
                         <p class="experience-date">09/25 - Present</p>
                     </div>
                     <div class="experience-item">
                         <h3>AI Safety Research Lead - ResearchCircle</h3>
                         <p class="experience-description">
-                            Lead the AI Safety Circle: read and distill technical AI safety research, spanning interpretability, evaluations, and representation monitoring, and run discussions that make it accessible to a mixed, non-specialist audience. The initiative aims to build technical AI safety awareness and research capacity in Pakistan.
+                            Lead the AI Safety Circle: read and distill technical AI safety research, spanning interpretability, evaluations, and representation monitoring, and run discussions that make it accessible to a mixed audience. The initiative aims to build technical AI safety awareness and research capacity in Pakistan which is currently lacking.
                         </p>
                         <p class="experience-date">03/26 - Present</p>
                     </div>
                     <div class="experience-item">
                         <h3>Technical AI Safety Research Project - BlueDot Impact</h3>
                         <p class="experience-description">
-                            Conducting an independent technical AI safety research project as part of BlueDot Impact’s research track.
+                            Conducting an independent technical AI safety research project as part of BlueDot Impact’s research track. The project is about testing how robust current probes are to confound-targeted decorrelation.
                         </p>
                         <p class="experience-date">05/26 - Present</p>
                     </div>
@@ -250,7 +277,7 @@
                             <p class="publication-venue"><strong>AAAI 2026 XAI4Science Workshop</strong> <span class="badge-accepted">Accepted</span></p>
                             <p class="publication-description">
                                 • <strong>First Author</strong><br>
-                                Studied how high-norm activations emerge in Diffusion Transformers and what role they play, using causal ablation, activation analysis, probing, and attention and MLP analysis. We show that a small number of emergent high-norm tokens behave as sink registers, absorbing attention rather than encoding image content.
+                                Studied how high-norm activations emerge in Diffusion Transformers and what role they play, using causal ablation, activation analysis, probing, and attention and MLP analysis. We show that a small number of emergent high-norm tokens behave as sink registers, absorbing attention rather than encoding special semantic meaning.
                             </p>
                             <div class="publication-links">
                                 <a href="https://openreview.net/pdf?id=Fc7s3UrQr1" target="_blank" rel="noopener noreferrer">Paper</a>
@@ -287,7 +314,7 @@
                             <h3 class="publication-title">Downstream Effects of High-Norm Activations in Diffusion Transformers</h3>
                             <p class="publication-venue">Ongoing Research</p>
                             <p class="publication-description">
-                                Investigates whether sink registers and naturally occurring high-norm activations distort downstream methods that depend on a model’s internal activation distribution, such as quantisation, pruning, distillation, and feature reuse. A central question is whether explicitly handling register and high-norm tokens can improve compressed or modified Diffusion Transformers over standard methods.
+                                Investigates whether sink registers and naturally occurring high-norm activations distort downstream methods that depend on a model’s internal activation distribution, such as quantisation, pruning, distillation, and feature reuse. A central question is whether explicitly handling register and high-norm tokens can improve Diffusion Transformers over standard methods.
                             </p>
                             <p class="publication-description">
                                 • <strong>Research themes</strong><br>
@@ -305,9 +332,9 @@
                         <div class="publication-content">
                             <h3 class="publication-title">Probing the Probes</h3>
                             <p class="publication-venue">Ongoing Research</p>
-                            <p class="publication-description"><em>A Cross-Family Audit of Safety-Probe Robustness under Confound-Targeted Decorrelation</em></p>
+                            <p class="publication-description"><em>A Cross-Family Audit of Safety Probe Robustness under Confound Targeted Decorrelation</em></p>
                             <p class="publication-description">
-                                Investigates whether activation-based safety probes detect their intended latent properties or instead rely on superficial correlations in their training data. Uses controlled, confound-targeted evaluations to test probe robustness across model families and safety-relevant settings such as evaluation awareness, refusal, harmful intent, and deception.
+                                Investigates whether activation-based safety probes detect their intended latent properties or instead rely on superficial correlations in their training data. Uses controlled, confound-targeted evaluations to test probe robustness across model families and safety-relevant settings.
                             </p>
                             <p class="publication-description">
                                 • <strong>Research themes</strong><br>
@@ -326,7 +353,7 @@
                             <h3 class="publication-title">SafeDriveX: A Benchmark for Reasoning Faithfulness in Vision-Language-Action Driving Models</h3>
                             <p class="publication-venue">Ongoing Research</p>
                             <p class="publication-description">
-                                A benchmark for evaluating whether the stated reasoning of vision-language-action driving models is consistent with the visual evidence they observe, the actions they select, and the trajectories they produce. Includes human-audited annotations, cross-model comparison, failure analysis, and robustness testing under controlled perturbations.
+                                A benchmark for evaluating whether the stated reasoning of vision-language-action driving models is consistent with the visual evidence they observe, the actions they select, and the trajectories they produce.
                             </p>
                             <p class="publication-description">
                                 • <strong>Research themes</strong><br>
@@ -367,6 +394,9 @@
                             <p class="publication-description">
                                 Built a generative-AI platform that lets fashion businesses automate ad creation from text and product images, with built-in content-moderation tools and project and campaign management for running their advertising.
                             </p>
+                            <div class="publication-links">
+                                <a href="https://github.com/AliShoaibHassan/AdVance" target="_blank" rel="noopener noreferrer">Code</a>
+                            </div>
                         </div>
                     </div>
                 </div>
